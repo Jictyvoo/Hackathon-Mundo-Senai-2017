@@ -72,7 +72,7 @@
     <div class="row">
         <div class="col-lg-4">
             <img class="img-circle"
-                 src="imagem/jogo.jpg"
+                 src="imagem/logo.png"
                  alt="Generic placeholder image" width="140" height="140">
             <h2>Jogo educativo</h2>
             <p>Um jogo desenvolvido para ajudar as crianças e jovens a entender a importancia de evitar a automedicação, mostrando-lhes os maleficios que esta prática pode causar.</p>

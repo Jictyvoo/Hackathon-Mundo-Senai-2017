@@ -1,5 +1,5 @@
 <title>Login para Farmácias</title>
-<form class="form-signin">
+<form class="form-signin" action="receita/receita.html">
     <h2 class="form-signin-heading">Login</h2>
     <label for="inputEmail" class="sr-only">Inserir email</label>
     <input type="email" id="inputEmail" class="form-control" placeholder="Inserir email" required autofocus>
@@ -10,5 +10,5 @@
             <input type="checkbox" value="remember-me"> Lembrar
         </label>
     </div>
-    <button class="btn btn-lg btn-primary btn-block" type="submit">Entrar</button>
+    <button class="btn btn-lg btn-primary btn-block"  type="submit">Entrar</button>
 </form>
