@@ -31,13 +31,15 @@ session_start();
 //session_destroy();
 if (!isset($_SESSION['navbarSelected'])) {
     $_SESSION['navbarSelected'] = "login.php";
-    $_SESSION['PageCodification']->associaCodificacaoPagina();
 }
 if (!isset($_SESSION['paginaAnterior']))
     $_SESSION['paginaAnterior'] = "login.php";
-if (isset($_SESSION['PageCodification']) == false)
+if (isset($_SESSION['PageCodification']) == false) {
     $_SESSION['PageCodification'] = new PageCodification(array("login.php", "drugstoreSystem/login.php",
         "mobileGame.php", "questionService/login.php", "questionService/mainService.php"));
+
+    $_SESSION['PageCodification']->associaCodificacaoPagina();
+}
 if (!isset($_GET['selectPage'])) {
     $paginaDestino = $_SESSION['paginaAnterior'];
 } else {
