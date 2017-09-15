@@ -1,5 +1,4 @@
 <?php
-require_once("../../models/SearchInSugestions.php");
 if (!isset($_SESSION['SearchInSugestions']))
     $_SESSION['SearchInSugestions'] = new SearchInSugestions();
 ?>

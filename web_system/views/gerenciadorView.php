@@ -23,6 +23,7 @@
 <body>
 
 <?php
+include_once("../models/SearchInSugestions.php");
 include_once("../models/PageCodification.php");
 include_once("../util/ArrayList.php");
 include_once("../util/Graph.php");
