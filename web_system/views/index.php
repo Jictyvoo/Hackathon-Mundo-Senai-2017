@@ -12,7 +12,7 @@
     <div class="carousel-inner" role="listbox">
         <div class="item active">
             <img class="first-slide"
-                 src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
+                 src="../views/imagem/carousel-1.jpeg"
                  alt="First slide">
             <div class="container">
                 <div class="carousel-caption">
@@ -26,7 +26,7 @@
         </div>
         <div class="item">
             <img class="second-slide"
-                 src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
+                 src="../views/imagem/carousel-2.jpg"
                  alt="Second slide">
             <div class="container">
                 <div class="carousel-caption">
@@ -39,7 +39,7 @@
         </div>
         <div class="item">
             <img class="third-slide"
-                 src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
+                 src="../views/imagem/carousel-3.png"
                  alt="Third slide">
             <div class="container">
                 <div class="carousel-caption">

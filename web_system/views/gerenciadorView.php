@@ -28,7 +28,7 @@ if (!isset($_SESSION['paginaAnterior'])){
 }
 if (isset($_SESSION['PageCodification']) == false) {
     $_SESSION['PageCodification'] = new PageCodification(array("login.php", "drugstoreSystem/login.php",
-        "mobileGame.php", "questionService/login.php", "questionService/mainService.php"));
+        "mobileGame.php", "questionService/login.php", "questionService/mainService.php", "drugstoreSystem/receita.php"));
 
     $_SESSION['PageCodification']->associaCodificacaoPagina();
 }
@@ -56,7 +56,7 @@ $_SESSION['navbarSelected'] = $paginaDestino;
             </div>
             <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
-                    <li class="<?php echo $_SESSION['navbarSelected'] == 'login.php' ? 'active' : ''; ?>">
+                    <li class="<?php echo $_SESSION['navbarSelected'] == 'index.php' ? 'active' : ''; ?>">
                         <a href="gerenciadorView.php?selectPage=<?= $_SESSION['PageCodification']->getCodigos(0) ?>">Home</a>
                     </li>
                     
@@ -68,7 +68,7 @@ $_SESSION['navbarSelected'] = $paginaDestino;
                             <li class="divider"></li>
                             <li class="dropdown-header">Items Category</li>
                             <li class=""><a href="#">Manipulate Item</a></li>
-                            <li class=""><a href="#">List Items</a></li>
+                            <li class=""><a href="#">Contact Us</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -94,6 +94,9 @@ $_SESSION['navbarSelected'] = $paginaDestino;
                 break;
             case "questionService/mainService.php":
                 include("questionService/mainService.php");
+                break;
+            case "drugstoreSystem/receita.php":
+                include("drugstoreSystem/receita.php");
                 break;
             default:
                 # code...

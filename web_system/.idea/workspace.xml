@@ -14,8 +14,18 @@
       <file leaf-file-name="gerenciadorView.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/gerenciadorView.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="74" lean-forward="false" selection-start-line="9" selection-start-column="74" selection-end-line="9" selection-end-column="74" />
+            <state relative-caret-position="476">
+              <caret line="70" column="63" lean-forward="false" selection-start-line="70" selection-start-column="63" selection-end-line="70" selection-end-column="63" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/drugstoreSystem/login.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="38" lean-forward="false" selection-start-line="1" selection-start-column="38" selection-end-line="1" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -35,7 +45,7 @@
         <entry file="file://$PROJECT_DIR$/views/mobileGame.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="51">
-              <caret line="3" column="50" lean-forward="false" selection-start-line="3" selection-start-column="50" selection-end-line="3" selection-end-column="50" />
+              <caret line="3" column="45" lean-forward="false" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -44,12 +54,12 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="61" lean-forward="true" selection-start-line="9" selection-start-column="61" selection-end-line="9" selection-end-column="61" />
+            <state relative-caret-position="289">
+              <caret line="41" column="52" lean-forward="false" selection-start-line="41" selection-start-column="52" selection-end-line="41" selection-end-column="52" />
               <folding>
-                <element signature="e#4751#4758#0#HTML" expanded="true" />
-                <element signature="e#5350#5357#0#HTML" expanded="true" />
-                <marker date="1505467837728" expanded="true" signature="4042:4049" ph="»" />
+                <element signature="e#4596#4603#0#HTML" expanded="true" />
+                <element signature="e#5195#5202#0#HTML" expanded="true" />
+                <marker date="1505473609403" expanded="true" signature="3887:3894" ph="»" />
               </folding>
             </state>
           </provider>
@@ -58,12 +68,32 @@
       <file leaf-file-name="mainService.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/questionService/mainService.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="66" lean-forward="false" selection-start-line="5" selection-start-column="66" selection-end-line="5" selection-end-column="66" />
+            <state relative-caret-position="170">
+              <caret line="10" column="26" lean-forward="false" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
               <folding>
-                <marker date="1505468278528" expanded="true" signature="857:1552" ph="..." />
-                <marker date="1505468278528" expanded="true" signature="1091:1443" ph="..." />
+                <marker date="1505469982565" expanded="true" signature="592:1287" ph="..." />
+                <marker date="1505469982565" expanded="true" signature="826:1178" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="receita.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/drugstoreSystem/receita.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="465">
+              <caret line="149" column="50" lean-forward="false" selection-start-line="149" selection-start-column="50" selection-end-line="149" selection-end-column="50" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="barra.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/drugstoreSystem/barra.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="754">
+              <caret line="73" column="5" lean-forward="false" selection-start-line="73" selection-start-column="5" selection-end-line="73" selection-end-column="5" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -100,6 +130,7 @@
       <find>int</find>
       <find>VetorLista</find>
       <find>CodificacaoPaginas</find>
+      <find>imagens</find>
     </findStrings>
     <replaceStrings>
       <replace>this -&gt;</replace>
@@ -109,6 +140,7 @@
       <replace>$</replace>
       <replace>ArrayList</replace>
       <replace>PageCodification</replace>
+      <replace>../imagem</replace>
     </replaceStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -132,11 +164,14 @@
         <option value="$PROJECT_DIR$/controllers/loginControl.php" />
         <option value="$PROJECT_DIR$/models/graphChoices.json" />
         <option value="$PROJECT_DIR$/util/Graph.php" />
-        <option value="$PROJECT_DIR$/views/index.php" />
         <option value="$PROJECT_DIR$/views/mobileGame.php" />
-        <option value="$PROJECT_DIR$/views/questionService/mainService.php" />
         <option value="$PROJECT_DIR$/models/SearchInSugestions.php" />
+        <option value="$PROJECT_DIR$/views/questionService/mainService.php" />
+        <option value="$PROJECT_DIR$/views/drugstoreSystem/barra.php" />
+        <option value="$PROJECT_DIR$/views/drugstoreSystem/login.php" />
+        <option value="$PROJECT_DIR$/views/drugstoreSystem/receita.php" />
         <option value="$PROJECT_DIR$/views/gerenciadorView.php" />
+        <option value="$PROJECT_DIR$/views/index.php" />
       </list>
     </option>
   </component>
@@ -205,6 +240,12 @@
               <item name="web_system" type="b2602c69:ProjectViewProjectNode" />
               <item name="web_system" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="imagem" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="web_system" type="b2602c69:ProjectViewProjectNode" />
+              <item name="web_system" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="questionService" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
@@ -220,6 +261,11 @@
     <property name="settings.editor.selected.configurable" value="preferences.editor" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\Hackathon-Mundo-Senai-2017\web_system\views\imagem" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -244,12 +290,12 @@
       <option name="presentableId" value="Default" />
       <updated>1505446788910</updated>
       <workItem from="1505446813357" duration="4439000" />
-      <workItem from="1505451419996" duration="16998000" />
+      <workItem from="1505451419996" duration="19836000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21437000" />
+    <option name="totallyTimeSpent" value="24275000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -403,14 +449,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/drugstoreSystem/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="7" lean-forward="true" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/models/graphChoices.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -454,19 +492,8 @@
     <entry file="file://$PROJECT_DIR$/views/mobileGame.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
-          <caret line="3" column="50" lean-forward="false" selection-start-line="3" selection-start-column="50" selection-end-line="3" selection-end-column="50" />
+          <caret line="3" column="45" lean-forward="false" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/questionService/mainService.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="66" lean-forward="false" selection-start-line="5" selection-start-column="66" selection-end-line="5" selection-end-column="66" />
-          <folding>
-            <marker date="1505468278528" expanded="true" signature="857:1552" ph="..." />
-            <marker date="1505468278528" expanded="true" signature="1091:1443" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -478,22 +505,57 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/views/questionService/mainService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="26" lean-forward="false" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+          <folding>
+            <marker date="1505469982565" expanded="true" signature="592:1287" ph="..." />
+            <marker date="1505469982565" expanded="true" signature="826:1178" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/drugstoreSystem/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="38" lean-forward="false" selection-start-line="1" selection-start-column="38" selection-end-line="1" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/drugstoreSystem/receita.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="149" column="50" lean-forward="false" selection-start-line="149" selection-start-column="50" selection-end-line="149" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/drugstoreSystem/barra.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="754">
+          <caret line="73" column="5" lean-forward="false" selection-start-line="73" selection-start-column="5" selection-end-line="73" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/views/gerenciadorView.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="74" lean-forward="false" selection-start-line="9" selection-start-column="74" selection-end-line="9" selection-end-column="74" />
+        <state relative-caret-position="476">
+          <caret line="70" column="63" lean-forward="false" selection-start-line="70" selection-start-column="63" selection-end-line="70" selection-end-column="63" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="61" lean-forward="true" selection-start-line="9" selection-start-column="61" selection-end-line="9" selection-end-column="61" />
+        <state relative-caret-position="289">
+          <caret line="41" column="52" lean-forward="false" selection-start-line="41" selection-start-column="52" selection-end-line="41" selection-end-column="52" />
           <folding>
-            <element signature="e#4751#4758#0#HTML" expanded="true" />
-            <element signature="e#5350#5357#0#HTML" expanded="true" />
-            <marker date="1505467837728" expanded="true" signature="4042:4049" ph="»" />
+            <element signature="e#4596#4603#0#HTML" expanded="true" />
+            <element signature="e#5195#5202#0#HTML" expanded="true" />
+            <marker date="1505473609403" expanded="true" signature="3887:3894" ph="»" />
           </folding>
         </state>
       </provider>
