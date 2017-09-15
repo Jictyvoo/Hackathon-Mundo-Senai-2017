@@ -18,7 +18,7 @@
                 <div class="carousel-caption">
                     <h1>Esperamos conscientizá-los</h1>
                     <p>Fazemos mais por você</p>
-                    <p><a class="btn btn-lg btn-primary" href="#" role="button">Entre Agora</a></p>
+                    <p><a class="btn btn-lg btn-primary" href="<?='../views/gerenciadorView.php?selectPage='.($_SESSION['PageCodification'] -> getChave("questionService/login.php"))?>" role="button">Entre Agora</a></p>
                 </div>
             </div>
         </div>
@@ -42,7 +42,7 @@
                 <div class="carousel-caption">
                     <h1>Entre em contato conosco</h1>
                     <p>dê sugestões, fale com o suporte e procure mais a respeito dos médicos necessários</p>
-                    <p><a class="btn btn-lg btn-primary" href="#" role="button">Entre em contato</a></p>
+                    <p><a class="btn btn-lg btn-primary" href="<?='../views/gerenciadorView.php?selectPage='.($_SESSION['PageCodification'] -> getChave("contactUs.php"))?>" role="button">Entre em contato</a></p>
                 </div>
             </div>
         </div>

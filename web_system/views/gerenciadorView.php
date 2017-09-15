@@ -28,7 +28,8 @@ if (!isset($_SESSION['paginaAnterior'])){
 }
 if (isset($_SESSION['PageCodification']) == false) {
     $_SESSION['PageCodification'] = new PageCodification(array("login.php", "drugstoreSystem/login.php",
-        "mobileGame.php", "questionService/login.php", "questionService/mainService.php", "drugstoreSystem/receita.php"));
+        "mobileGame.php", "questionService/login.php", "questionService/mainService.php", "drugstoreSystem/receita.php",
+         "contactUs.php", "questionService/register.php"));
 
     $_SESSION['PageCodification']->associaCodificacaoPagina();
 }
@@ -57,7 +58,7 @@ $_SESSION['navbarSelected'] = $paginaDestino;
             <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
                     <li class="<?php echo $_SESSION['navbarSelected'] == 'index.php' ? 'active' : ''; ?>">
-                        <a href="gerenciadorView.php?selectPage=<?= $_SESSION['PageCodification']->getCodigos(0) ?>">Home</a>
+                        <a href="<?='gerenciadorView.php?selectPage='.($_SESSION['PageCodification'] -> getChave("questionService/index.php"))?>">Home</a>
                     </li>
                     
                     <li class="dropdown">
@@ -67,8 +68,8 @@ $_SESSION['navbarSelected'] = $paginaDestino;
                             <li class=""><a href="#">Edit Storage Information</a></li>
                             <li class="divider"></li>
                             <li class="dropdown-header">Items Category</li>
-                            <li class=""><a href="#">Manipulate Item</a></li>
-                            <li class=""><a href="#">Contact Us</a></li>
+                            <li class=""><a href="<?='../views/gerenciadorView.php?selectPage='.($_SESSION['PageCodification'] -> getChave("questionService/register.php"))?>">Register Here</a></li>
+                            <li class=""><a href="<?='../views/gerenciadorView.php?selectPage='.($_SESSION['PageCodification'] -> getChave("contactUs.php"))?>">Contact Us</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -97,6 +98,12 @@ $_SESSION['navbarSelected'] = $paginaDestino;
                 break;
             case "drugstoreSystem/receita.php":
                 include("drugstoreSystem/receita.php");
+                break;
+            case "contactUs.php":
+                include("contactUs.php");
+                break;
+            case "questionService/register.php":
+                include("questionService/register.php");
                 break;
             default:
                 # code...
