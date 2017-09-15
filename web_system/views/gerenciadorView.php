@@ -32,8 +32,9 @@ session_start();
 if (!isset($_SESSION['navbarSelected'])) {
     $_SESSION['navbarSelected'] = "login.php";
 }
-if (!isset($_SESSION['paginaAnterior']))
+if (!isset($_SESSION['paginaAnterior'])){
     $_SESSION['paginaAnterior'] = "login.php";
+}
 if (isset($_SESSION['PageCodification']) == false) {
     $_SESSION['PageCodification'] = new PageCodification(array("login.php", "drugstoreSystem/login.php",
         "mobileGame.php", "questionService/login.php", "questionService/mainService.php"));
@@ -67,6 +68,7 @@ $_SESSION['navbarSelected'] = $paginaDestino;
                     <li class="<?php echo $_SESSION['navbarSelected'] == 'login.php' ? 'active' : ''; ?>">
                         <a href="gerenciadorView.php?selectPage=<?= $_SESSION['PageCodification']->getCodigos(0) ?>">Home</a>
                     </li>
+                    
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Actions <b class="caret"></b></a>
                         <ul class="dropdown-menu">
@@ -82,6 +84,7 @@ $_SESSION['navbarSelected'] = $paginaDestino;
             </div><!--/.nav-collapse -->
         </div>
     </div>
+
 
     <div class="container">
         <?php
@@ -115,6 +118,7 @@ $_SESSION['navbarSelected'] = $paginaDestino;
         </p>
     </div>
 </div>
+
 
 <!-- Bootstrap core JavaScript
 ================================================== -->
