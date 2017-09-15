@@ -1,6 +1,6 @@
 <?php
 
-require_once("../../util/Graph.php");
+require_once("../util/Graph.php");
 
 class SearchInSugestions
 {
@@ -10,7 +10,7 @@ class SearchInSugestions
 
     public function __construct()
     {
-        $graphItens = json_decode(file_get_contents("../../models/graphChoices.json"));
+        $graphItens = json_decode(file_get_contents("../models/graphChoices.json"));
         $this->mainGraph = new Graph();
         foreach ($graphItens->vertex as $storedVertex) {
             $this->mainGraph->addVertex($storedVertex);
