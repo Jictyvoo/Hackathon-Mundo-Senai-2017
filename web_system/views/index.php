@@ -76,7 +76,7 @@
                  alt="Generic placeholder image" width="140" height="140">
             <h2>Jogo educativo</h2>
             <p>Um jogo desenvolvido para ajudar as crianças e jovens a entender a importancia de evitar a automedicação, mostrando-lhes os maleficios que esta prática pode causar.</p>
-            <p><a class="btn btn-default" href="#" role="button">Baixar &raquo;</a></p>
+            <p><a class="btn btn-default" href="<?='../views/gerenciadorView.php?selectPage='.($_SESSION['PageCodification'] -> getChave("mobileGame.php"))?>" role="button">Baixar &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
             <img class="img-circle"
@@ -84,7 +84,7 @@
                  alt="Generic placeholder image" width="140" height="140">
             <h2>Meus sintomas</h2>
             <p>Formulário de perguntas com o objetivo de acelerar o diagnóstico do paciente para que este procure um médico especializado, além de indicar tratamentos naturais paliativos com o intuito de evitar a automedicação compulsiva.</p>
-            <p><a class="btn btn-default" href="#" role="button">Acesse &raquo;</a></p>
+            <p><a class="btn btn-default" href="<?='../views/gerenciadorView.php?selectPage='.($_SESSION['PageCodification'] -> getChave("questionService/mainService.php"))?>" role="button">Acesse &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
             <img class="img-circle"
@@ -92,6 +92,6 @@
                  alt="Generic placeholder image" width="140" height="140">
             <h2>Receitas</h2>
             <p>Acesso específico para farmácias e médicos cadastrados para geração de receitas controladas por sistema de código de barras.</p>
-            <p><a class="btn btn-default" href="#" role="button">Entrar &raquo;</a></p>
+            <p><a class="btn btn-default" href="<?='../views/gerenciadorView.php?selectPage='.($_SESSION['PageCodification'] -> getChave("drugstoreSystem/login.php"))?>" role="button">Entrar &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
     </div><!-- /.row -->

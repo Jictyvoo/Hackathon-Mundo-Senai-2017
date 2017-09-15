@@ -58,7 +58,7 @@ class Graph
      */
     private function foundVertex($vertexNameSearch)
     {
-        for ($position = 0; $position < $this->next; $position += 1) {
+        for ($position = 0; $position < $this->allVertex -> size(); $position += 1) {
             $search = $this->allVertex->get($position);
             if ($search->getVertexName() == $vertexNameSearch)
                 return $search;
@@ -73,8 +73,8 @@ class Graph
      */
     public function addVertex($newVertexName)
     {
-        if ($this->foundVertex(newVertexName) == null) {
-            $this->allVertex->add(new Vertex(newVertexName));
+        if ($this->foundVertex($newVertexName) == null) {
+            $this->allVertex->add(new Vertex($newVertexName));
         }
     }
 
