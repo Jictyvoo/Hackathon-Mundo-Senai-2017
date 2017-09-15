@@ -1,5 +1,5 @@
 #Greenfoot properties
-#Fri Sep 15 05:54:17 BRT 2017
+#Fri Sep 15 06:04:07 BRT 2017
 class.dipiron.image=dipiron.png
 class.paracetamol.image=paracetamol.png
 target4.type=ClassTarget
@@ -75,7 +75,7 @@ readme.height=58
 class.aspirine.image=aspirine.png
 target2.name=botao
 readme.name=@README
-simulation.speed=71
+simulation.speed=49
 package.numDependencies=1
 class.bau.superclass=greenfoot.Actor
 class.paracetam.image=paracetam.png
