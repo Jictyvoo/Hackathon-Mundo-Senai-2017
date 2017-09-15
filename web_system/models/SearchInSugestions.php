@@ -1,6 +1,7 @@
 <?php
 
 require_once("../util/Graph.php");
+require_once("../util/ArrayList.php");
 
 class SearchInSugestions
 {
@@ -31,19 +32,29 @@ class SearchInSugestions
         $visited[$this->inHere->getVertexName()] = true;
     }
 
-    public
-    function getAdjacent()
+    public function getAdjacent()
     {
+        $returnArray = new ArrayList();
+        for ($position = 0; $position < $this->inHere->getEdges()->size(); $position += 1) {
+            if (!isset($visited[$this->inHere->getEdges()->get($position)->getVertex()->getVertexName()]))
+                $returnArray->add($this->inHere->getEdges()->get($position));
+        }
+
         return $this->inHere->getEdges();
     }
 
-    public
-    function moveTo($selected)
+    public function moveTo($selected)
     {   /*this function will move to selected vertex*/
-        if ($this->mainGraph->getAllVertex()->contains($selected)) {
-            $this->visited[$this->inHere->getVertexName()] = true;
-            $this->$this->inHere = $selected;
+        for ($position = 0; $position < $this->mainGraph->getAllVertex()->size(); $position += 1) {
+            if ($this->mainGraph->getAllVertex()->get($position)->getVertexName() == $selected) {
+                $this->visited[$this->inHere->getVertexName()] = true;
+                $this->inHere = $this->mainGraph->getAllVertex()->get($position);
+            }
         }
+    }
+
+    public function results(){
+
     }
 
 }

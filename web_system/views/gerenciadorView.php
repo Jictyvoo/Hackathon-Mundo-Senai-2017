@@ -6,18 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>O que tomar?</title>
 
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" type="text/css" href="../layout/css/bootstrap.css">
-
-    <!-- Custom styles for this template -->
-    <link rel="stylesheet" type="text/css" href="../layout/css/sticky-footer-navbar.css">
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-    <script src="../layout/js/html5shiv.js"></script>
-    <script src="../layout/js/respond.min.js"></script>
-
-    <script src="../layout/js/ie-emulation-modes-warning.js"></script>
-    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="../layout/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../layout/css/fonts.css">
 
 </head>
 <body>
@@ -84,7 +74,7 @@ $_SESSION['navbarSelected'] = $paginaDestino;
                 </ul>
             </div><!--/.nav-collapse -->
         </div>
-    </div>
+    </div><br/><br/><br/><br/><br/><br/><br/>
 
 
     <div class="container">

@@ -1,6 +1,10 @@
 <?php
 if (!isset($_SESSION['SearchInSugestions']))
     $_SESSION['SearchInSugestions'] = new SearchInSugestions();
+else {
+    if (isset($_POST['choose']))
+        $_SESSION['SearchInSugestions']->moveTo($_POST['choose']);
+}
 ?>
 
 <div class="row">
@@ -25,7 +29,8 @@ if (!isset($_SESSION['SearchInSugestions']))
                             <?php for ($position = 0; $position < $_SESSION['SearchInSugestions']->getAdjacent()->size(); $position += 1): ?>
                                 <tr>
                                     <td>
-                                        <input type="submit" name="choose" value="<?= $_SESSION['SearchInSugestions']->getAdjacent()->get($position)->getVertex()->getVertexName() ?>">
+                                        <input type="submit" name="choose"
+                                               value="<?= $_SESSION['SearchInSugestions']->getAdjacent()->get($position)->getVertex()->getVertexName() ?>">
                                     </td>
                                 </tr>
                             <?php endfor ?>
