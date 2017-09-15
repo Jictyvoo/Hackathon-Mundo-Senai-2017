@@ -31,7 +31,7 @@ campo campo = new campo();
         menino.setLocation(49,274);
         menino.setLocation(53,282);
         menino.setLocation(52,292);
-        
+
         addObject(campo,307,207);
         campo.setLocation(300,198);
         campo.setLocation(302,201);
@@ -42,6 +42,9 @@ campo campo = new campo();
         campo.setLocation(300,200);
         menino menino2 = new menino();
         addObject(menino2,49,283);
+        receita receita = new receita();
+        addObject(receita,433,261);
+        receita.setLocation(457,268);
     }
     
     public campo getCampo(){

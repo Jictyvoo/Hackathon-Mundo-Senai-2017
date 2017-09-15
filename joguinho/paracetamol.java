@@ -14,6 +14,12 @@ public class paracetamol extends Actor
      */
     public void act() 
     {
-        // Add your action code here.
-    }    
+        cair();
+    } 
+    
+    public void cair(){
+    if(getY()!=310){
+    setLocation(getX(),getY()+60);
+    }
+}  
 }

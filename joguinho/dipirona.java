@@ -13,7 +13,13 @@ public class dipirona extends Actor
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public void act() 
-    {
-        // Add your action code here.
-    }    
+     {
+        cair();
+    } 
+    
+    public void cair(){
+    if(getY()!=305){
+    setLocation(getX(),getY()+60);
+    }
+}  
 }

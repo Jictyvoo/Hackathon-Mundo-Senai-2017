@@ -11,7 +11,7 @@ public class menino extends Actor
      GreenfootImage[] myImage = new GreenfootImage[11];
      GreenfootImage[] myImage2 = new GreenfootImage[5];
      GreenfootImage[] jump = new GreenfootImage[6];
-     boolean left = false, right = false,test = true;
+     boolean left = false, right = false,test = true,mm=false;
         
         public menino(){
          
@@ -50,6 +50,8 @@ public class menino extends Actor
        jump();
        checkfloor();
        checkchest();
+       checkmedicines();
+       end();
     }
     
     public void runRight(){
@@ -128,9 +130,69 @@ public class menino extends Actor
     Greenfoot.setWorld(new f());
     }
     
+  
+    }
+      
+    public void checkmedicines(){
+    Actor aspirina = getOneIntersectingObject(aspirina.class);
+    if(aspirina!=null){
+    f world = (f) getWorld();
+    aspirine aspirine = new aspirine();
+    world.addObject(aspirine,334,220);
+    Greenfoot.delay(400);
+    world.removeObject(aspirine);
+    world.removeObject(aspirina);
+    
+    }
+    Actor dipirona = getOneIntersectingObject(dipirona.class);
+    if(dipirona!=null){
+    f world = (f) getWorld();
+    dipiron dipiron = new dipiron();
+    world.addObject(dipiron,334,220);
+    Greenfoot.delay(400);
+    world.removeObject(dipiron);
+    world.removeObject(dipirona);
+    
+    }
+     Actor neosoro = getOneIntersectingObject(neosoro.class);
+    if(neosoro!=null){
+    f world = (f) getWorld();
+    neosor neosor = new neosor();
+    world.addObject(neosor,334,220);
+    Greenfoot.delay(400);
+    world.removeObject(neosor);
+    world.removeObject(neosoro);
+    
+    }
+   Actor paracetamol = getOneIntersectingObject(paracetamol.class);
+    if(paracetamol!=null){
+    f world = (f) getWorld();
+    paracetam paracetam = new paracetam();
+    world.addObject(paracetam,334,220);
+    Greenfoot.delay(400);
+    world.removeObject(paracetam);
+    world.removeObject(paracetamol);
+    mm = true;
+    
+    
+    }
+    
+     Actor receita = getOneIntersectingObject(receita.class);
+    if(receita!=null){
+    fase1 world = (fase1) getWorld();
+    world.removeObject(receita);
+    
+    }
     }
     
     
-    
+    public void end(){
+    if(mm){
+        
+    f world = (f) getWorld();
+    world.addObject(new fim(),334,220);
+    Greenfoot.delay(500);
+    Greenfoot.stop();}
+    }
     
 }

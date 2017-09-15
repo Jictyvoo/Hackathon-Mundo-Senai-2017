@@ -36,5 +36,13 @@ public class f extends World
         campo2.setLocation(300,199);
         menino menino = new menino();
         addObject(menino,49,283);
+        aspirina aspirina = new aspirina();
+        addObject(aspirina,219,6);
+        dipirona dipirona = new dipirona();
+        addObject(dipirona,327,5);
+        neosoro neosoro = new neosoro();
+        addObject(neosoro,440,10);
+        paracetamol paracetamol = new paracetamol();
+        addObject(paracetamol,554,10);
     }
 }

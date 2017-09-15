@@ -13,7 +13,13 @@ public class neosoro extends Actor
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public void act() 
-    {
-        // Add your action code here.
-    }    
+     {
+        cair();
+    } 
+    
+    public void cair(){
+    if(getY()!=310){
+    setLocation(getX(),getY()+60);
+    }
+} 
 }
