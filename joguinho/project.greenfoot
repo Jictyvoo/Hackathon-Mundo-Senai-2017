@@ -1,5 +1,5 @@
 #Greenfoot properties
-#Fri Sep 15 05:40:58 BRT 2017
+#Fri Sep 15 05:54:17 BRT 2017
 class.dipiron.image=dipiron.png
 class.paracetamol.image=paracetamol.png
 target4.type=ClassTarget
@@ -75,7 +75,7 @@ readme.height=58
 class.aspirine.image=aspirine.png
 target2.name=botao
 readme.name=@README
-simulation.speed=51
+simulation.speed=71
 package.numDependencies=1
 class.bau.superclass=greenfoot.Actor
 class.paracetam.image=paracetam.png
@@ -83,7 +83,7 @@ target3.type=ClassTarget
 target4.width=80
 class.campo.superclass=greenfoot.Actor
 class.fase1.superclass=greenfoot.World
-world.lastInstantiated=fase1
+world.lastInstantiated=telainicio
 mainWindow.height=744
 target2.showInterface=false
 target3.name=MyWorld
