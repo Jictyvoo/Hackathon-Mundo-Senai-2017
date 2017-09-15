@@ -5,6 +5,8 @@ require_once('ArrayList.php');
  * Classe Grafo que armazena uma lista de vértices e os conecta através de arestas
  * @author João Victor Oliveira Couto
  */
+require_once ("Vertex.php");
+require_once ("Edge.php");
 class Graph
 {
     private $allVertex;

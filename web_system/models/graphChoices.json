@@ -1,8 +1,8 @@
 {
-	firstVertex : "sintomas",
-	vertex: ["inicio","sintomas", "enjoo","dor_na_barriga","dor_de_cabeca","febre","inflamacao_na_garganta","historico_de_desnutricao?","historico_de_faringite?","historico_de_amigdalite?"]
-	edges: ["inicio-sintomas","sintomas-enjoo","sintomas-dor_na_barriga","sintomas-dor_de_cabeca","sintomas-febre","sintomas-inflamacao_na_garganta",
-			"enjoo-historico_de_desnutricao?", "dor_na_barriga-historico_de_desnutricao?", "dor_de_cabeca-historico_de_desnutricao?", "historico_de_desnutricao?-alimentacao_continua_e_balanceada?"
+	"firstVertex" : "inicio",
+	"vertex": ["inicio","sintomas", "enjoo","dor_na_barriga","dor_de_cabeca","febre","inflamacao_na_garganta","historico_de_desnutricao?","historico_de_faringite?","historico_de_amigdalite?"],
+	"edges": ["inicio-sintomas","sintomas-enjoo","sintomas-dor_na_barriga","sintomas-dor_de_cabeca","sintomas-febre","sintomas-inflamacao_na_garganta",
+			"enjoo-historico_de_desnutricao?", "dor_na_barriga-historico_de_desnutricao?", "dor_de_cabeca-historico_de_desnutricao?", "historico_de_desnutricao?-alimentacao_continua_e_balanceada?",
 			"febre-historico_de_faringite?", "inflamacao_na_garganta-historico_de_faringite?", "historico_de_faringite?-Historico_de_amigdalite?"
 				]
 }

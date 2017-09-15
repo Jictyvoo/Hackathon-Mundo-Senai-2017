@@ -4,22 +4,18 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
     <title>O que tomar?</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="../layout/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../layout/css/bootstrap.css">
 
     <!-- Custom styles for this template -->
-    <link href="../layout/css/sticky-footer-navbar.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../layout/css/sticky-footer-navbar.css">
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
     <script src="../layout/js/html5shiv.js"></script>
     <script src="../layout/js/respond.min.js"></script>
 
-    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="../layout/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <script src="../layout/js/ie-emulation-modes-warning.js"></script>
     <![endif]-->
 
@@ -40,8 +36,8 @@ if (!isset($_SESSION['navbarSelected'])) {
 if (!isset($_SESSION['paginaAnterior']))
     $_SESSION['paginaAnterior'] = "login.php";
 if (isset($_SESSION['PageCodification']) == false)
-    $_SESSION['PageCodification'] = new PageCodification(array("index.php", "drugstoreSystem/login.php",
-        "mobileGame.php", "questionService/login.php"));
+    $_SESSION['PageCodification'] = new PageCodification(array("login.php", "drugstoreSystem/login.php",
+        "mobileGame.php", "questionService/login.php", "questionService/mainService.php"));
 if (!isset($_GET['selectPage'])) {
     $paginaDestino = $_SESSION['paginaAnterior'];
 } else {
@@ -88,10 +84,21 @@ $_SESSION['navbarSelected'] = $paginaDestino;
     <div class="container">
         <?php
         switch ($paginaDestino) {
-            case "index.php":
+            case "login.php":
                 include("index.php");
                 break;
-
+            case "drugstoreSystem/login.php":
+                include("drugstoreSystem/login.php");
+                break;
+            case "mobileGame.php":
+                include("mobileGame.php");
+                break;
+            case "questionService/login.php":
+                include("questionService/login.php");
+                break;
+            case "questionService/mainService.php":
+                include("questionService/mainService.php");
+                break;
             default:
                 # code...
                 break;
