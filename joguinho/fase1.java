@@ -8,7 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class fase1 extends World
 {
-
+campo campo = new campo();
     /**
      * Constructor for objects of class fase1.
      * 
@@ -31,7 +31,7 @@ public class fase1 extends World
         menino.setLocation(49,274);
         menino.setLocation(53,282);
         menino.setLocation(52,292);
-        campo campo = new campo();
+        
         addObject(campo,307,207);
         campo.setLocation(300,198);
         campo.setLocation(302,201);
@@ -42,5 +42,9 @@ public class fase1 extends World
         campo.setLocation(300,200);
         menino menino2 = new menino();
         addObject(menino2,49,283);
+    }
+    
+    public campo getCampo(){
+    return campo;
     }
 }

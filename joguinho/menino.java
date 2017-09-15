@@ -11,7 +11,7 @@ public class menino extends Actor
      GreenfootImage[] myImage = new GreenfootImage[11];
      GreenfootImage[] myImage2 = new GreenfootImage[5];
      GreenfootImage[] jump = new GreenfootImage[6];
-     boolean left = false, right = false;
+     boolean left = false, right = false,test = true;
         
         public menino(){
          
@@ -48,7 +48,8 @@ public class menino extends Actor
        runRight();
        runLeft();
        jump();
-       
+       checkfloor();
+       checkchest();
     }
     
     public void runRight(){
@@ -90,10 +91,10 @@ public class menino extends Actor
           Greenfoot.delay(5);
           setLocation(getX(),getY()+30);
           this.setImage(jump[5]);
-    left= false;
+          left= false;
     }
     if(right){
-        Greenfoot.delay(5);
+          Greenfoot.delay(5);
           this.setImage(jump[0]);
           setLocation(getX(),getY()-60);
           Greenfoot.delay(5);
@@ -107,5 +108,29 @@ public class menino extends Actor
     }
 }
     }
+    
+    public void checkfloor(){
+     GreenfootImage myImage = new GreenfootImage("bg2.png");
+     if(test){
+    if(getX()==599 && getY()==283){
+        fase1 world = (fase1) getWorld();
+        world.getCampo().setImage(myImage);
+        Greenfoot.setWorld(new bg2());
+    }
+}
+    }
+    public void checkchest(){
+    Actor bau =  getOneIntersectingObject(bau.class);
+    if(bau!=null){
+    fase1 world = (fase1) getWorld();
+    world.addObject(new message(),334,220);
+    Greenfoot.delay(400);
+    Greenfoot.setWorld(new f());
+    }
+    
+    }
+    
+    
+    
     
 }
