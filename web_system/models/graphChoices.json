@@ -1,8 +1,45 @@
 {
-	"firstVertex" : "inicio",
-	"vertex": ["inicio","sintomas", "enjoo","dor_na_barriga","dor_de_cabeca","febre","inflamacao_na_garganta","historico_de_desnutricao?","historico_de_faringite?","historico_de_amigdalite?"],
-	"edges": ["inicio-sintomas","sintomas-enjoo","sintomas-dor_na_barriga","sintomas-dor_de_cabeca","sintomas-febre","sintomas-inflamacao_na_garganta",
-			"enjoo-historico_de_desnutricao?", "dor_na_barriga-historico_de_desnutricao?", "dor_de_cabeca-historico_de_desnutricao?", "historico_de_desnutricao?-alimentacao_continua_e_balanceada?",
-			"febre-historico_de_faringite?", "inflamacao_na_garganta-historico_de_faringite?", "historico_de_faringite?-Historico_de_amigdalite?"
-				]
+	"firstVertex": "sintomas",
+	"vertex": [
+		"sintomas",
+		"Enjôo",
+		"Dor na Barriga",
+		"Dor na Cabeça",
+		"Febre",
+		"Inflamação na Garganta",
+		"Possui Histórico de Desnutrição",
+		"Possui Histórico de Faringite",
+		"Possui Histórico de Amigdalite"
+	],
+	"edges": [
+		"sintomas-Enjôo",
+		"sintomas-Dor na Barriga",
+		"sintomas-Dor na Cabeça",
+		"sintomas-Febre",
+		"sintomas-Inflamação na Garganta",
+		"Enjôo-Possui Histórico de Desnutrição",
+		"Dor na Barriga-Possui Histórico de Desnutrição",
+		"Dor na Cabeça-Possui Histórico de Desnutrição",
+		"Febre-Possui Histórico de Faringite",
+		"Inflamação na Garganta-Possui Histórico de Faringite",
+		"Possui Histórico de Faringite-Possui Histórico de Amigdalite"
+	],
+	"results": [
+		{
+			"name": "Chá de Canela",
+			"associed_Code": [
+				"*.2.6.1",
+				"*.2.4.1"
+			],
+			"about": "A canela tem propriedades antibacterianas e anti-fungos, assim combate bactérias e fungos dos tipos nocivos.Também se mostra bastante eficaz contra candidíases e úlceras.Tem propriedades anti-inflamatórias e age no processo de desinflamação de tecidos, entre outros.É uma rica fonte de substâncias como manganês, ferro e cálcio.Possui determinadas substâncias que combatem os radicais livres e isso contribui por exemplo, para prevenção do envelhecimento precoce e enfraquecimento dos fios de cabelo.Ajuda em casos de diarreia, dores molares, resfriados simples e estimula a memória.Possui benefícios para quem deseja emagrecer: Seu efeito termogênico promove o aumento da temperatura do corpo, assim, facilitando a queima das gorduras;Faz o estômago esvaziar de forma mais lenta, desse modo, a pessoa demora mais a sentir fome;Elimina a vontade de comer doces, devido ao seu sabor adocicado.Podendo ser usada inclusive para adoçar leite, café, sucos e vitaminas."
+		},
+		{
+			"name": "Água",
+			"associed_Code": [
+				"*.2.4.3.2",
+				"*.2.5.4"
+			],
+			"about": ""
+		}
+	]
 }
