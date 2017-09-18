@@ -127,7 +127,8 @@ $_SESSION ['navbarSelected'] = $paginaDestino;
 					include ("questionService/register.php");
 					break;
 				default :
-					// code...
+					$_SESSION['errorFound'] = $_GET ['selectPage'];
+					include ("404.php");
 					break;
 			}
 		?>

@@ -47,10 +47,10 @@ class PageCodification {
 				return $chaves;
 			}
 		}
-		return $this->codigos [0];
+		return null/*$this->codigos [0]*/;
 	}
 	public function getCodigoPagina($chavePagina) {
-		return ($this->paginasChaves != null) ? $this->paginasChaves [$this->verificaCodigoExiste ( $chavePagina )] : $this->paginasExistentes [0];
+		return ($this->paginasChaves != null) ? $this->paginasChaves [$this->verificaCodigoExiste ( $chavePagina )] : null/*$this->paginasExistentes [0]*/;
 	}
 	public function getCodigos($position) {
 		if ($position < 0 || $position >= count ( $this->codigos ))
